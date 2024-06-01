@@ -11,23 +11,23 @@ using namespace std;
 //funcion max
 int funcionMax(int a, int b){
 int mayor=0, contador=0, num1=0, num2=0;
-    cout<<"Ingrese cantidad a comparar: ";
-    cin>>contador;
+    
     do{
     cout<<"Por favor, ingrese un valor positivo: ";
     cin>>contador; 
         }while(contador<=1);
+
      do{
             cout<<"Ingrese el valor 1: ";
             cin>>num1;//2
-        }while(num1<=0);
+        }while(num1<0);
 
     for(int i=1; i<contador; i++){
-        
+    
         do{
-            cout<<"Ingrese el valor "<<i+1<<":";
+            cout<<"Ingrese el valor "<<i+1<<": ";
             cin>>num2;//4; 5; 2
-        }while(num2<=0);
+        }while(num2<0);
     
         if (num2>=num1){ // en la 2da vuelta-> 5 es mayor que 4?  si, entonces:
                 mayor=num2;//mayor vale 4; mayor vale 5
